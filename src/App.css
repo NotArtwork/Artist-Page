@@ -8,6 +8,41 @@
   height: 100vh;
 }
 
+.aboutNames {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutImgDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aboutImg {
+  height: 50vh;
+  width: 25vw;
+  object-fit: cover;
+}
+
+.aboutText {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutText1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 5em;
+}
+
+.aboutText2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 5em;
+}
+
 .landingpage {
   background-color: rgba(0, 0, 0, 0.2);
   height: 100vh;
