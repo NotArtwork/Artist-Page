@@ -1,28 +1,38 @@
 import Navbar from "./Navbar";
+import MixingPaint from '../media/mixingPaint.mp4'
 
 const LandingPage = () => {
     return (
         <div className="landingpage">
+
             <Navbar />
 
-            {/* <h1
-                style={{
-                    margin: '0', padding: '1.5%'
-                }}>Sabrinas Pandas</h1> */}
 
-            <div className="landingText">
-
-                <h1>World Class Artists</h1>
-                <p>Sign up to keep updated with
-                    Gallery openings
-                    and
-                    our projects
-                </p>
+            <div className='videoFilter'>
+                {/* opacity filter over video */}
             </div>
 
-            <button>Join us ></button>
+            <video
+                className='video'
+                autoPlay
+                loop
+                muted
+            >
+                <source src={MixingPaint} type='video/mp4' />
+            </video>
 
-        </div>
+
+            <div className="landingText">
+                <h1>World Class Artists</h1>
+
+                <p>Sign up to keep updated with <br />
+                    Gallery openings and Projects
+                </p>
+
+                <button className="joinUsBtn">Join us &nbsp; ></button>
+
+            </div>
+        </div >
     )
 }
 
