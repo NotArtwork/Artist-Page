@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 const About = () => {
     return (
-        <div>
+        <div className="about">
             <Navbar />
             <h1>About</h1>
         </div>
