@@ -17,17 +17,7 @@ app.listen(PORT, () => {
     console.log(`Application is running on ${PORT}`)
 })
 
-// const uri = "mongodb+srv://Artwork:Uchiha1245@cluster0.5kkhush.mongodb.net/?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-// client.connect(err => {
-//     const collection = client.db("test").collection("devices");
-//     // perform actions on the collection object
-//     client.close();
-// });
-
-
-
-mongoose.connect('mongodb+srv://Artwork:Uchiha1245@cluster0.5kkhush.mongodb.net/Artist-Page')
+mongoose.connect(process.env.MONGODB_KEY)
 const db =  mongoose.connection
 
 db.on('error', (err) => {
