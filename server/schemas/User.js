@@ -13,8 +13,10 @@ const userSchema = new Schema({
     },
     art_pieces: {
         type: Array
+    },
+    profile_image: {
+        type: String
     }
-
 }, {timestamps: true})
 
 const User = mongoose.model('User', userSchema)

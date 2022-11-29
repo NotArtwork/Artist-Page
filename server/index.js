@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const { MongoClient, ServerApiVersion } = require('mongodb')
-const UserRoutes = require('./routes/user')
+const UserRoute = require('./routes/user')
 
 const app = express()
 
@@ -38,4 +38,4 @@ db.once('open', () => {
     console.log('Database Connection Established')
 })
 
-app.use('/api/employee', UserRoutes)
+app.use('/api/user', UserRoute)
