@@ -5,7 +5,7 @@
 
 .about {
   background-color: rgba(0, 0, 0, 0.2);
-  height: 100vh;
+  height: 100%;
 }
 
 .aboutNames {
@@ -85,6 +85,20 @@
 
 .navLogo {
   margin: 0 10vw;
+}
+
+.sampleImgDiv {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1700px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.sampleImg {
+  height: 800px;
+  width: 800px;
+  border: solid 1px black;
 }
 
 .signInBtn {

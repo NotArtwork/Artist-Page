@@ -29,6 +29,14 @@ const About = () => {
                 <div className="aboutText2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laboriosam dolor eaque, quasi commodi aperiam soluta. Consectetur exercitationem sint, porro sequi rem, molestiae eius praesentium, iste aperiam recusandae aliquam quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque voluptate, dolorem nemo nesciunt libero! At, earum itaque voluptates odio iusto, unde expedita fugit, eligendi ea voluptas error molestiae dicta?</p>
                 </div>
+
+            </div>
+
+            <div className="sampleImgDiv">
+                <img className="sampleImg" src="https://www.tallusridge.com/wp-content/uploads/2019/08/650x600.jpg" />
+                <img className="sampleImg" src="https://www.tallusridge.com/wp-content/uploads/2019/08/650x600.jpg" />
+                <img className="sampleImg" src="https://www.tallusridge.com/wp-content/uploads/2019/08/650x600.jpg" />
+                <img className="sampleImg" src="https://www.tallusridge.com/wp-content/uploads/2019/08/650x600.jpg" />
             </div>
         </div>
     )
