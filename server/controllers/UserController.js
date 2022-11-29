@@ -43,6 +43,9 @@ const store = (req, res, next) => {
         email: req.body.email,
         password: req.body.password,
     })
+    if(req.file) {
+        user.profile_image = req.file.path
+    }
     user.save()
     .then(response => {
         res.json({
@@ -64,7 +67,15 @@ const update = (req, res, next) => {
     let updatedData = {
         name: req.body.full_name,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+    }
+    if (req.files) {
+        let path = ''
+        req.files.forEach((files, index, arr) => {
+            path = path + files.path + ','
+        })
+        path = path.substring(0, path.lastIndexOf(","))
+        updatedData.art_pieces = path
     }
 
     User.findByIdAndUpdate(userID, {$set: updatedData})
