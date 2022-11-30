@@ -87,6 +87,17 @@
   margin: 0 10vw;
 }
 
+.profileImg {
+  height: 50vh;
+  width: 25vw;
+  object-fit: cover;
+}
+
+.profileBio {
+  width: 75vw;
+  margin: 3vh 12vw;
+}
+
 .sampleImgDiv {
   display: flex;
   flex-wrap: wrap;
