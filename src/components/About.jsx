@@ -1,20 +1,37 @@
 import Navbar from "./Navbar";
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
         <div className="about">
             <Navbar />
             <div className="aboutNames">
-                <h1>Panda</h1>
-                <h1>Sabrina</h1>
+
+                <Link
+                    className='link' to='/jelani'>
+                    <h1>Jelani</h1>
+                </Link>
+
+                <Link
+                    className='link' to='/sabrina'>
+                    <h1>Sabrina</h1>
+                </Link>
 
             </div>
 
             <div className="aboutImgDiv">
 
-                <img className="aboutImg" src="https://media.istockphoto.com/id/1389097654/photo/young-panda-climbing-a-tree-under-the-supervision-of-his-mother.jpg?b=1&s=170667a&w=0&k=20&c=c0nBeVG29cs7pHK7s4iFa5evHSS0zOcTibY4OeGlhqs=" />
+                <Link
+                    to='/jelani'>
 
-                <img className="aboutImg" src="https://pbs.twimg.com/profile_images/646496617525288960/kNke3rKq_400x400.jpg" />
+                    <img className="aboutImg" src="https://media.istockphoto.com/id/1389097654/photo/young-panda-climbing-a-tree-under-the-supervision-of-his-mother.jpg?b=1&s=170667a&w=0&k=20&c=c0nBeVG29cs7pHK7s4iFa5evHSS0zOcTibY4OeGlhqs=" />
+                </Link>
+
+                <Link
+                    to='/sabrina'>
+
+                    <img className="aboutImg" src="https://pbs.twimg.com/profile_images/646496617525288960/kNke3rKq_400x400.jpg" />
+                </Link>
 
             </div>
 
