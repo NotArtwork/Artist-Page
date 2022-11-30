@@ -75,8 +75,19 @@ const update = (req, res, next) => {
             path = path + files.path + ','
         })
         path = path.substring(0, path.lastIndexOf(","))
-        updatedData.art_pieces = path
+        updatedData.art_pieces = path.split(',').map((image) => {
+            return (
+                {
+                    name: image.name,
+                    image: image,
+                    userID: userID
+                }
+            )
+        })
+    } else  if (req.file) {
+        updatedData.profile_image = req.file.path
     }
+
 
     User.findByIdAndUpdate(userID, {$set: updatedData})
     .then(() => {
