@@ -5,7 +5,7 @@
 
 .about {
   background-color: rgba(0, 0, 0, 0.2);
-  height: 100vh;
+  height: 100%;
 }
 
 .aboutNames {
@@ -41,6 +41,14 @@
   display: flex;
   justify-content: space-around;
   margin: 2em 5em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 2em 0;
 }
 
 .landingpage {
@@ -85,6 +93,40 @@
 
 .navLogo {
   margin: 0 10vw;
+}
+
+.profileBio {
+  width: 75vw;
+  margin: 3vh 12vw;
+}
+
+.profileDiv {
+  margin: 5em;
+  box-shadow: 1px 15px 20px
+}
+
+.profileImg {
+  height: 50vh;
+  width: 25vw;
+  object-fit: cover;
+}
+
+.sampleImgDiv {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1700px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.profileName {
+  padding-top: 1em;
+}
+
+.sampleImg {
+  height: 800px;
+  width: 800px;
+  border: solid 1px black;
 }
 
 .signInBtn {

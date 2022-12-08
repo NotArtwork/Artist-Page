@@ -5,6 +5,8 @@ import About from './components/About';
 import Discover from './components/Discover';
 import Commissions from './components/Commissions';
 import SignUp from './components/SignUp';
+import SabrinaProfile from './components/SabrinaProfile';
+import JelaniProfile from './components/JelaniProfile';
 
 function App() {
   return (
@@ -35,6 +37,16 @@ function App() {
           <Route
             path='/signup'
             element={<SignUp />}
+          />
+
+          <Route
+            path='/jelani'
+            element={<JelaniProfile />}
+          />
+
+          <Route
+            path='/sabrina'
+            element={<SabrinaProfile />}
           />
 
         </Routes>
