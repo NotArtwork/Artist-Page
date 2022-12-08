@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const userSchema = new Schema({
+const artistSchema = new Schema({
     name: {
         type: String
     },
@@ -16,6 +16,6 @@ const userSchema = new Schema({
     },
 }, {timestamp: true})
 
-const User = mongoose.model('User', userSchema)
+const Artist = mongoose.model('Artist', artistSchema)
 
-module.exports = User
+module.exports = Artist
